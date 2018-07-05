@@ -4,9 +4,16 @@
 
 int main(){
   int d[2],T,i;
+  char name[11];
 
   srand(time(NULL));
 
+  printf("What is your name?\n");
+
+  scanf("%s",name);
+
+  printf("Hello, %s!\n",name);
+  
  for(i=0;i<2;i++){
   d[i] = rand() % 6 + 1;
   }
@@ -18,9 +25,9 @@ int main(){
   printf("Die 2: %d\n",d[1]);
   printf("Total value: %d\n",T);
   if(T >= 7)
-    printf("You won\n");
+    printf("%s won!\n",name);
   else
-    printf("You lose\n");
+    printf("%s lose!\n",name);
     
   return 0;
 }

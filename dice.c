@@ -4,9 +4,16 @@
 
 int main(){
   int d[2],T,i;
+  char name[11];
 
   srand(time(NULL));
 
+  printf("What is your name?\n");
+
+  scanf("%s",name);
+
+  printf("Hello, %s!\n",name);
+  
  for(i=0;i<2;i++){
   d[i] = rand() % 6 + 1;
   }
